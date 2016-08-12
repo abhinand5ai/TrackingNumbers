@@ -8,6 +8,11 @@ public class Range {
 	}
 //	this =  |....|
 //	Range r = +....+
+	
+	public boolean isEqual(Range r){
+		return start == r.start && end == r.end;
+	}
+	
 	public boolean isSuperSet(Range r){//			|..+...+..|
 		return start<r.start && r.end <end;
 	}
